@@ -6,7 +6,7 @@ export default function NavAvatar() {
   return (
     <div className="shrink-0">
       <Link className="flex items-center overflow-hidden rounded-full" href="/">
-        <Image src={Avatar} alt="Thi's avatar" width={38} height={38} />
+        <Image src={Avatar} alt="My's avatar" width={38} height={38} />
       </Link>
     </div>
   )
