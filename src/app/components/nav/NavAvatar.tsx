@@ -1,4 +1,4 @@
-import Avatar from '@/public/avatar.webp'
+import Avatar from '@/public/avatar_my.png'
 import Image from 'next/image'
 import Link from 'next/link'
 
