@@ -1,4 +1,4 @@
-import Avatar from '@/public/avatar.webp'
+import Avatar from '@/public/avatar_my.png'
 import WavingHand from '@/public/waving_hand.webp'
 import BadgeInfos from '@notion-x/src/components/BadgeInfos'
 import BadgeSocial from '@notion-x/src/components/BadgeSocial'
