@@ -7,7 +7,7 @@ const socials: BadgeSocialProps[] = [
     id: 'linkedin',
     title: 'LinkedIn',
     icon: LinkedInIcon,
-    url: 'https://www.linkedin.com/in/dinhanhthi/'
+    url: 'https://www.linkedin.com/in/myhanguyen07/'
   },
   {
     id: 'tiktok',
