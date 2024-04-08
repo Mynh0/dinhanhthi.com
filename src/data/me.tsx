@@ -3,6 +3,7 @@ export const me = {
   email: 'mynh.contactwork@gmail.com',
   website: 'https://mynh-demo1.vercel.app',
   quote: 'Hope my journey ignite a love for learning',
+  github: 'https://github.com/Mynh0',
   linkedin: 'https://www.linkedin.com/in/myhanguyen07/',
   twitter: 'xxx',
   goodreads: 'xxx',
