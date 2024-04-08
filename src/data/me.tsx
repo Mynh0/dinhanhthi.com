@@ -11,10 +11,10 @@ export const me = {
   // Used in the home page
   helloText: 'Hi! I am My, you can also call me Gin',
   shortIntro:
-    'I am always eager to learn new things and challenge myself in different domains and contexts. I have a passion for technology, data analytics. I aspire to become a versatile and innovative <span class=" font-normal text-amber-200">Business Consultant</span>, who can leverage data and technology to create value and impact for businesses and society. On this page, you can find the notes I made when I discovered something new in the fields of <span class=" font-normal text-amber-200">Consultant</span> and <span class=" font-normal text-amber-200">Technological Knowledge</span>.',
+    'I am always eager to learn new things and challenge myself in different domains and contexts. I aspire to become a versatile and innovative <span class=" font-normal text-amber-200">Business Consultant</span>, who can leverage data and technology to create value and impact for businesses and society. On this page, you can find the notes I made when I discovered something new in the fields of <span class=" font-normal text-amber-200">Consultant</span> and <span class=" font-normal text-amber-200">Technological Knowledge</span>.',
   // Used in the about page
   longIntro:
-    'I am <span class="font-normal text-amber-200">My</span>, a Vietnamese girl <span class=" font-normal text-amber-200">Data Scientist</span> with a curious mind. As an life-long learner, I am interested in researching and sharing content about <span class=" font-normal text-amber-200">Consultant</span>, <span class=" font-normal text-amber-200">Technological Knowledge</span> and <span class=" font-normal text-amber-200">Data Science</span>.',
+    'I am <span class="font-normal text-amber-200">My</span>, a Vietnamese girl with a curious mind. As an life-long learner, I am interested in researching and sharing content about <span class=" font-normal text-amber-200">Consultant</span> and <span class=" font-normal text-amber-200">Technological Knowledge</span>.',
   // Display a badge everywhere
   lookingForJob: false, // true if you are looking for a job. A badge will be displayed on the home page
   lookingForJobLabel: 'Looking for a job', // or 'Available for hire'
@@ -22,7 +22,7 @@ export const me = {
     from: {
       label: 'Ha Noi, Vietnam'
     },
-    location: {
+    describe: {
       label: 'Fille de curiosités, France'
     },
     linkedin: {
