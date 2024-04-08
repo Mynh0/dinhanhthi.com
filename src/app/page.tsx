@@ -33,11 +33,11 @@ import { getMetadata, getUri } from './lib/helpers'
 export const revalidate = 20
 
 export const metadata = getMetadata({
-  title: "Hi! I'm Thi",
+  title: "Hi! I'm My",
   description: me.quote,
   images: [
     {
-      url: 'https://i.imgur.com/PyXUtfTh.png',
+      url: 'https://i.imgur.com/0lA6lk7.png',
       width: 1024,
       height: 581
     }
