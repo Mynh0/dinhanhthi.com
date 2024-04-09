@@ -28,11 +28,11 @@ import {
   getUnofficialProjects,
   getUnofficialTools
 } from './lib/fetcher'
-import { getUri } from './lib/helpers'
+import { getMetadata, getUri } from './lib/helpers'
 
 export const revalidate = 20
 
-export const metadata = {
+export const metadata = getMetadata({
   title: "Hi! I'm My",
   description: me.quote,
   images: [
@@ -42,7 +42,7 @@ export const metadata = {
       height: 581
     }
   ]
-}
+})
 
 
 export default async function Home() {
