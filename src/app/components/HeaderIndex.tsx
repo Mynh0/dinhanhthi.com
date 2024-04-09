@@ -23,7 +23,7 @@ export default function HeaderIndex() {
       >
         <div className="h-28 md:order-2 md:h-60">
           <ImageComponent
-            alt="Thi's avatar"
+            alt="My's avatar"
             image={{ staticImageData: Avatar }}
             className="h-full w-auto"
           />
@@ -42,7 +42,7 @@ export default function HeaderIndex() {
             >
               <Image src={WavingHand} alt="Waving hand" width={36} height={36} />
             </span>
-            {me.helloText || "Hi! I'm Thi"}
+            {me.helloText || "Hi! I'm My"}
           </h1>
           <p
             className={cn(
