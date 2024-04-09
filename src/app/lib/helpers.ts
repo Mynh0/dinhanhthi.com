@@ -123,7 +123,7 @@ export function getMetadata(opts: {
       type: 'website',
       images: opts.images || [
         {
-          url: 'https://i.imgur.com/PyXUtfTh.png',
+          url: 'https://i.imgur.com/0lA6lk7.png',
           width: 1024,
           height: 581
         }
