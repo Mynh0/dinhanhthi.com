@@ -118,7 +118,16 @@ export function getMetadata(opts: {
     title: generateMetaTitle(opts.title),
     description: opts.description || me.quote,
     openGraph: {
-      title: opts.title || "Hi! I'm My"
+      title: opts.title || "Hi! I'm My",
+      description: opts.description || me.quote,
+      type: 'website',
+      images: opts.images || [
+        {
+          url: 'https://i.imgur.com/0lA6lk7.png',
+          width: 1024,
+          height: 581
+        }
+      ]
     }
   }
 }
