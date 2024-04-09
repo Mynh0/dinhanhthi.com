@@ -28,7 +28,6 @@ import {
   getUnofficialProjects,
   getUnofficialTools
 } from './lib/fetcher'
-import { getMetadata, getUri } from './lib/helpers'
 
 export const revalidate = 20
 
