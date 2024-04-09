@@ -2,6 +2,7 @@ import { ImgurUrlType } from '@/src/interface'
 import { Post, Tag } from '@notion-x/src/interface'
 import { mapTag } from '@notion-x/src/lib/helpers'
 import { QueryDatabaseParameters } from '@notionhq/client/build/src/api-endpoints'
+import { Metadata } from 'next'
 import { Block } from 'notion-types'
 
 import me from '../../data/me'
@@ -102,6 +103,33 @@ export function getFilter(filter?: any): QueryDatabaseParameters['filter'] {
     return {
       and: [...defaultFilter, ...(filter?.and ?? [])]
     }
+}
+
+export function generateMetaTitle(title: string) {
+  return `${title} | Site of My`
+}
+
+export function getMetadata(opts: {
+  title: string
+  description?: string
+  images?: any[]
+}): Metadata {
+  return {
+    title: generateMetaTitle(opts.title),
+    description: opts.description || me.quote,
+    openGraph: {
+      title: opts.title || "Hi! I'm My",
+      description: opts.description || me.quote,
+      type: 'website',
+      images: opts.images || [
+        {
+          url: 'https://i.imgur.com/0lA6lk7.png',
+          width: 246,
+          height: 246
+        }
+      ]
+    }
+  }
 }
 
 export function getPostProperties(post: Block, topics: Tag[] = []): Post {
