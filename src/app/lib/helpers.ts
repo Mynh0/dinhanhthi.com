@@ -106,7 +106,7 @@ export function getFilter(filter?: any): QueryDatabaseParameters['filter'] {
 }
 
 export function generateMetaTitle(title: string) {
-  return `${title} | Site of Thi`
+  return `${title} | Site of My`
 }
 
 export function getMetadata(opts: {
@@ -118,7 +118,7 @@ export function getMetadata(opts: {
     title: generateMetaTitle(opts.title),
     description: opts.description || me.quote,
     openGraph: {
-      title: opts.title || "Hi! I'm Thi",
+      title: opts.title || "Hi! I'm My",
       description: opts.description || me.quote,
       type: 'website',
       images: opts.images || [
