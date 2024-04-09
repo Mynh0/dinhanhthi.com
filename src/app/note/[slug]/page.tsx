@@ -13,7 +13,7 @@ export const revalidate = 20
 
 export async function generateMetadata({ params }: DynamicSegmentParamsProps): Promise<Metadata> {
   const slug = params.slug || ''
-  const untitled = 'Unknown note | Site of Thi'
+  const untitled = 'Unknown note | Site of My'
   if (!slug) return { title: untitled }
   const allPosts = await getUnofficialPosts()
   const post = allPosts.find(post => post.slug === slug)
