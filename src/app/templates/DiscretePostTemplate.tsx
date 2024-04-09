@@ -35,7 +35,7 @@ export default function DiscretePostTemplate(props: DiscretePostTemplateType) {
             <PostBody
               recordMap={props.recordMap}
               blockOptions={{
-                siteDomain: 'dinhanhthi.com',
+                siteDomain: 'mynh.id.vn',
                 labelTocTitle: 'In this note',
                 blockCodeCopiedText: 'Copied',
                 blockCodeCopyText: 'Copy',

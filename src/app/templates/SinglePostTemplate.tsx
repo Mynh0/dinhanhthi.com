@@ -48,7 +48,7 @@ export default function SinglePostTemplate(props: SinglePostTemplateProps) {
             <PostBody
               recordMap={props.recordMap}
               blockOptions={{
-                siteDomain: 'dinhanhthi.com',
+                siteDomain: 'mynh.id.vn',
                 labelTocTitle: props.postProps?.blog ? 'In this post' : 'In this note',
                 blockCodeCopiedText: 'Copied',
                 blockCodeCopyText: 'Copy',
