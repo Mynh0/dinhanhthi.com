@@ -41,7 +41,7 @@ export default function Footer(props: FooterProps) {
           </a>{' '}
           <span>|</span>
           <Link className={cn(aClass)} href={'/support-me/'}>
-            <Image className="h-4 w-auto" src={CafeIcon} alt="Cafe icon" /> Support Thi
+            <Image className="h-4 w-auto" src={CafeIcon} alt="Cafe icon" /> Support My
           </Link>
         </div>
         <div className="flex flex-row flex-wrap items-center justify-center gap-2 pt-1 pb-2 lg:flex-row">
