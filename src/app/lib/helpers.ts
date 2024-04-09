@@ -120,7 +120,14 @@ export function getMetadata(opts: {
     openGraph: {
       title: opts.title || "Hi! I'm My",
       description: opts.description || me.quote,
-      type: 'website'
+      type: 'website',
+      images: opts.images || [
+        {
+          url: 'https://i.imgur.com/0lA6lk7.png',
+          width: 1024,
+          height: 581
+        }
+      ]
     }
   }
 }
