@@ -2,7 +2,6 @@ import { ImgurUrlType } from '@/src/interface'
 import { Post, Tag } from '@notion-x/src/interface'
 import { mapTag } from '@notion-x/src/lib/helpers'
 import { QueryDatabaseParameters } from '@notionhq/client/build/src/api-endpoints'
-import { Metadata } from 'next'
 import { Block } from 'notion-types'
 
 import me from '../../data/me'
@@ -104,8 +103,6 @@ export function getFilter(filter?: any): QueryDatabaseParameters['filter'] {
       and: [...defaultFilter, ...(filter?.and ?? [])]
     }
 }
-
-
 
 export function getPostProperties(post: Block, topics: Tag[] = []): Post {
   const id = post.id
