@@ -35,14 +35,7 @@ export const revalidate = 20
 export const metadata = getMetadata({
   title: "Hi! I'm My",
   description: me.quote,
-  images: [
-    {
-      url: 'https://i.imgur.com/0lA6lk7.png',
-      width: 1024,
-      height: 581
-    }
-  ]
-})
+)
 
 export default async function Home() {
   const numPinnedPosts = 6
