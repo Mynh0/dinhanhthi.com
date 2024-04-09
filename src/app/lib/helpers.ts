@@ -109,29 +109,6 @@ export function generateMetaTitle(title: string) {
   return `${title} | Site of My`
 }
 
-export function getMetadata(opts: {
-  title: string
-  description?: string
-  images?: any[]
-}): Metadata {
-  return {
-    title: generateMetaTitle(opts.title),
-    description: opts.description || me.quote,
-    openGraph: {
-      title: opts.title || "Hi! I'm My",
-      description: opts.description || me.quote,
-      type: 'website',
-      images: opts.images || [
-        {
-          url: 'https://i.imgur.com/0lA6lk7.png',
-          width: 1024,
-          height: 581
-        }
-      ]
-    }
-  }
-}
-
 export function getPostProperties(post: Block, topics: Tag[] = []): Post {
   const id = post.id
   const properties = post?.properties
