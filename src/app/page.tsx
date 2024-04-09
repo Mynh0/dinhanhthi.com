@@ -28,6 +28,7 @@ import {
   getUnofficialProjects,
   getUnofficialTools
 } from './lib/fetcher'
+import { getUri } from './lib/helpers'
 
 export const revalidate = 20
 
