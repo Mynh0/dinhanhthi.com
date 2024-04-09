@@ -39,7 +39,7 @@ export const metadata = getMetadata({
     {
       url:'https://i.imgur.com/XuLzBVG.png',
       width: 1341,
-      height: 411
+      height: 1288
     }
   ]
 })
