@@ -32,14 +32,17 @@ import { getMetadata, getUri } from './lib/helpers'
 
 export const revalidate = 20
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Hi! I'm My</title>
-	<meta property="og:title" content="Hi! I'm My" />
-	<meta property="og:image" content="https://i.imgur.com/0lA6lk7.png" />
-	<meta property="og:image:width" content="1024" />
-	<meta property="og:image:height" content="581" />
+export const metadata = getMetadata({
+  title: "Hi! I'm My",
+  description: me.quote,
+  images: [
+    {
+      url:'https://i.imgur.com/DvWuLpyh.png',
+      width: 1024,
+      height: 581
+    }
+  ]
+})
 
 
 export default async function Home() {
