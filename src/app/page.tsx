@@ -32,7 +32,7 @@ import { getMetadata, getUri } from './lib/helpers'
 
 export const revalidate = 20
 
-export const metadata = getMetadata({
+export const metadata = {
   title: "Hi! I'm My",
   description: me.quote,
   images: [
@@ -42,7 +42,7 @@ export const metadata = getMetadata({
       height: 581
     }
   ]
-})
+}
 
 
 export default async function Home() {
