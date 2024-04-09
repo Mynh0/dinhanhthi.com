@@ -121,7 +121,6 @@ export function getMetadata(opts: {
       title: opts.title || "Hi! I'm My",
       description: opts.description || me.quote,
       type: 'website'
-      ]
     }
   }
 }
