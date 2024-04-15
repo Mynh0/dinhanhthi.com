@@ -106,24 +106,8 @@ export function getFilter(filter?: any): QueryDatabaseParameters['filter'] {
 }
 
 export function generateMetaTitle(title: string) {
-  return `${title} | Site of My`
+  return `Site of My`
 }
-
-export function getMetadata(opts: {
-  title: string
-  description?: string
-}): Metadata {
-  return {
-    title: generateMetaTitle(opts.title),
-    description: opts.description || me.quote,
-    openGraph: {
-      title: opts.title || "Hi! I'm My",
-      description: opts.description || me.quote,
-      type: 'website'
-    }
-  }
-}
-
 export function getPostProperties(post: Block, topics: Tag[] = []): Post {
   const id = post.id
   const properties = post?.properties
