@@ -132,6 +132,7 @@ export function getMetadata(opts: {
   }
 }
 
+
 export function getPostProperties(post: Block, topics: Tag[] = []): Post {
   const id = post.id
   const properties = post?.properties
