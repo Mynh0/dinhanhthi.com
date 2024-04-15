@@ -106,8 +106,32 @@ export function getFilter(filter?: any): QueryDatabaseParameters['filter'] {
 }
 
 export function generateMetaTitle(title: string) {
-  return `Site of My`
+  return `${title} | Site of My`
 }
+
+export function getMetadata(opts: {
+  title: string
+  description?: string
+  images?: any[]
+}): Metadata {
+  return {
+    title: generateMetaTitle(opts.title),
+    description: opts.description || me.quote,
+    openGraph: {
+      title: opts.title || "Hi! I'm My",
+      description: opts.description || me.quote,
+      type: 'website',
+      images: opts.images || [
+        {
+          url: 'https://i.imgur.com/0lA6lk7.png',
+          width: 320,
+          height: 320
+        }
+      ]
+    }
+  }
+}
+
 export function getPostProperties(post: Block, topics: Tag[] = []): Post {
   const id = post.id
   const properties = post?.properties
