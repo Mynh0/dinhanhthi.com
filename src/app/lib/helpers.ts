@@ -112,7 +112,6 @@ export function generateMetaTitle(title: string) {
 export function getMetadata(opts: {
   title: string
   description?: string
-  images?: any[]
 }): Metadata {
   return {
     title: generateMetaTitle(opts.title),
@@ -120,14 +119,7 @@ export function getMetadata(opts: {
     openGraph: {
       title: opts.title || "Hi! I'm My",
       description: opts.description || me.quote,
-      type: 'website',
-      images: opts.images || [
-        {
-          url: 'https://i.imgur.com/0lA6lk7.png',
-          width: 246,
-          height: 246
-        }
-      ]
+      type: 'website'
     }
   }
 }
