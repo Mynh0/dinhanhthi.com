@@ -67,7 +67,7 @@ const techs: TechItem[] = [
   url: 'https://www.atlassian.com/'
 },
 {
-  id: 'cllickup',
+  id: 'clickup',
   name: 'Clickup',
   icon: ClickupIcon,
   url: 'https://clickup.com/'

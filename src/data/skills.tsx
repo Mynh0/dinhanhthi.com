@@ -25,28 +25,6 @@ const skills: SkillGroupType[] = [
     'asana'
     ]
   },
-  {
-    id: 'tools-services',
-    name: 'Tools & Services',
-    list: [
-      'bash',
-      'chrome-extension',
-      'dialogflow',
-      'imgur',
-      'gcp',
-      'git',
-      'gitkraken',
-      'huggingface',
-      'latex',
-      'linkedin',
-      'linux',
-      'notion',
-      'openai',
-      'postman',
-      'sphinx',
-      'vscode'
-    ]
-  }
 ]
 
 export default skills
