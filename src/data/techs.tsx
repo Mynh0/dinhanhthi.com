@@ -53,6 +53,7 @@ const techs: TechItem[] = [
   name: 'Excel',
   icon: ExcelIcon
   url: 'https://www.microsoft.com/'
+}, 
 {
   id: 'confluence',
   name: 'Confluence',
