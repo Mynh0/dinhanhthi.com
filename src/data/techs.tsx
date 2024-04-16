@@ -46,25 +46,24 @@ const techs: TechItem[] = [
   id: 'powerbi',
   name: 'PowerBI',
   icon: PowerBIIcon,
-  url: 'https://www.microsoft.com/en-us/power-platform/products/power-'
+  url: 'https://app.powerbi.com/'
 },
 {
   id: 'excel',
   name: 'Excel',
   icon: ExcelIcon
-  url: 'https://www.microsoft.com/en/microsoft-365/excel?market=vn&ef_id=_k_CjwKCAjww_iwBhApEiwAuG6ccPpK7LCPSqJlgz4hx1FxvC9-q3CT74gcSt1Qt90HOPZTOTSbNtlbIxoCtyAQAvD_BwE_k_&OCID=AIDcmmf4qjfbd9_SEM__k_CjwKCAjww_iwBhApEiwAuG6ccPpK7LCPSqJlgz4hx1FxvC9-q3CT74gcSt1Qt90HOPZTOTSbNtlbIxoCtyAQAvD_BwE_k_&gad_source=1&gclid=CjwKCAjww_iwBhApEiwAuG6ccPpK7LCPSqJlgz4hx1FxvC9-q3CT74gcSt1Qt90HOPZTOTSbNtlbIxoCtyAQAvD_BwE'
-},
+  url: 'https://www.microsoft.com/'
 {
   id: 'confluence',
   name: 'Confluence',
   icon: ConfluenceIcon,
-  url: 'https://www.atlassian.com/software/confluence'
+  url: 'https://www.confluence.com/'
 },
 {
   id: 'jira',
   name: 'Jira',
   icon: JiraIcon,
-  url: 'https://www.atlassian.com/software/jira/guides/getting-started/introduction'
+  url: 'https://www.atlassian.com/'
 },
 {
   id: 'cllickup',
