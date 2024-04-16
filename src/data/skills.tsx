@@ -4,7 +4,7 @@ const skills: SkillGroupType[] = [
   {
     id: 'languages',
     name: 'Languages',
-    list: ['postgresql','freefempp', 'js', 'matlab', 'php', 'python', 'ts']
+    list: ['postgresql','sqlite','python']
   },
   {
     id: 'ai-data',

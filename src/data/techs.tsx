@@ -7,7 +7,6 @@ import ChromeIcon from '@/public/about/techs/chrome.svg'
 import Detectron2Icon from '@/public/about/techs/detectron2.png'
 import DialogflowIcon from '@/public/about/techs/dialogflow.svg'
 import DockerIcon from '@/public/about/techs/docker.svg'
-import FreefemIcon from '@/public/about/techs/ff.svg'
 import FirebaseIcon from '@/public/about/techs/firebase.svg'
 import FoursquareIcon from '@/public/about/techs/foursquare.svg'
 import GatsbyIcon from '@/public/about/techs/gatsby.svg'
@@ -23,13 +22,11 @@ import HuggingFaceIcon from '@/public/about/techs/huggingface.svg'
 import ImgurIcon from '@/public/about/techs/imgur.svg'
 import JekyllIcon from '@/public/about/techs/jekyll.svg'
 import JestIcon from '@/public/about/techs/jestjs.svg'
-import JsIcon from '@/public/about/techs/js.svg'
 import JupyterIcon from '@/public/about/techs/jupyter.svg'
 import LatexIcon from '@/public/about/techs/latex.svg'
 import LinkedinIcon from '@/public/about/techs/linkedin.svg'
 import LinuxIcon from '@/public/about/techs/linux.svg'
 import LiquidIcon from '@/public/about/techs/liquid.svg'
-import MatlabIcon from '@/public/about/techs/matlab.svg'
 import MongoIcon from '@/public/about/techs/mongodb.svg'
 import MysqlIcon from '@/public/about/techs/mysql.svg'
 import NestjsIcon from '@/public/about/techs/nestjs.svg'
@@ -38,7 +35,6 @@ import NodejsIcon from '@/public/about/techs/node.svg'
 import NotionIcon from '@/public/about/techs/notion.svg'
 import NunjucksIcon from '@/public/about/techs/nunjucks.svg'
 import OpenAIIcon from '@/public/about/techs/openai.svg'
-import PhpIcon from '@/public/about/techs/php.svg'
 import PostmanIcon from '@/public/about/techs/postman.svg'
 import PythonIcon from '@/public/about/techs/python.svg'
 import PytorchIcon from '@/public/about/techs/pytorch.svg'
@@ -51,12 +47,12 @@ import ScikitlearnIcon from '@/public/about/techs/scikit-learn.svg'
 import SphinxIcon from '@/public/about/techs/sphinx.svg'
 import TailwindIcon from '@/public/about/techs/tailwindcss.svg'
 import TensorflowIcon from '@/public/about/techs/tf.svg'
-import TypescriptIcon from '@/public/about/techs/ts.svg'
 import VertexAIIcon from '@/public/about/techs/vertex.png'
 import ViteIcon from '@/public/about/techs/vite.svg'
 import VscodeIcon from '@/public/about/techs/vscode.svg'
 import WordpressIcon from '@/public/about/techs/wordpress.svg'
-import PostgreSQL from '@/public/about/techs/postgresql.svg'
+import PostgreSQLIcon from '@/public/about/techs/postgresql.svg'
+import SQLiteIcon from '@/public/about/techs/sqlite.png'
 import { StaticImageData } from 'next/image'
 
 export type TechItem = {
@@ -70,8 +66,14 @@ export type TechItem = {
 const techs: TechItem[] = [
   {id: 'postgresql',
    name: 'PostgreSQL',
-   icon: PostgreSQL,
+   icon: PostgreSQLIcon,
    url: 'https://www.postgresql.org/'
+  },
+  {
+    id: 'sqlite',
+    name: 'SQLite',
+    icon: SQLiteIcon,
+    url:'https://www.sqlite.org/'
   },
   {
     id: 'airflow',
@@ -138,12 +140,6 @@ const techs: TechItem[] = [
     name: 'Foursquare API',
     icon: FoursquareIcon,
     url: 'https://developer.foursquare.com/'
-  },
-  {
-    id: 'freefempp',
-    name: 'FreeFEM++',
-    icon: FreefemIcon,
-    url: 'http://www3.freefem.org/'
   },
   {
     id: 'gatsby',
@@ -224,12 +220,6 @@ const techs: TechItem[] = [
     url: 'https://jestjs.io/'
   },
   {
-    id: 'js',
-    name: 'JavaScript',
-    icon: JsIcon,
-    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
-  },
-  {
     id: 'jupyter',
     name: 'Jupyter',
     icon: JupyterIcon,
@@ -258,12 +248,6 @@ const techs: TechItem[] = [
     name: 'Liquid',
     icon: LiquidIcon,
     url: 'https://shopify.github.io/liquid/'
-  },
-  {
-    id: 'matlab',
-    name: 'Matlab',
-    icon: MatlabIcon,
-    url: 'https://www.mathworks.com/discovery/what-is-matlab.html'
   },
   {
     id: 'mongodb',
@@ -312,12 +296,6 @@ const techs: TechItem[] = [
     name: 'OpenAI API',
     icon: OpenAIIcon,
     url: 'https://platform.openai.com/docs/api-reference/'
-  },
-  {
-    id: 'php',
-    name: 'PHP',
-    icon: PhpIcon,
-    url: 'https://www.php.net/'
   },
   {
     id: 'postman',
@@ -384,12 +362,6 @@ const techs: TechItem[] = [
     name: 'TensorFlow',
     icon: TensorflowIcon,
     url: 'https://www.tensorflow.org/'
-  },
-  {
-    id: 'ts',
-    name: 'TypeScript',
-    icon: TypescriptIcon,
-    url: 'https://www.typescriptlang.org/'
   },
   {
     id: 'tailwindcss',
