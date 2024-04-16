@@ -7,58 +7,22 @@ const skills: SkillGroupType[] = [
     list: ['postgresql','sqlite','python']
   },
   {
-    id: 'ai-data',
-    name: 'AI & Data',
+    id: 'data',
+    name: 'Data',
     list: [
-      'airflow',
-      'detectron2',
-      'dialogflow',
-      'huggingface',
-      'jupyter',
-      'openai',
-      'pytorch',
-      'scikit-learn',
-      'tensorflow',
-      'vertex-ai'
+     'tableau',
+     'powerbi',
+     'excel'
     ]
   },
   {
-    id: 'frontend',
-    name: 'Frontend',
+    id: 'project_management',
+    name: 'Project Management',
     list: [
-      'angular',
-      'bootstrap',
-      'eleventy',
-      'gatsby',
-      'html5',
-      'jekyll',
-      'liquid',
-      'nextjs',
-      'nunjucks',
-      'react',
-      'rxjs',
-      'scss',
-      'tailwindcss',
-      'vite',
-      'wordpress'
-    ]
-  },
-  {
-    id: 'backend',
-    name: 'Backend',
-    list: [
-      'airflow',
-      'docker',
-      'firebase',
-      'graphql',
-      'grpc',
-      'google-nodejs-api',
-      'jestjs',
-      'mongodb',
-      'mysql',
-      'nestjs',
-      'nodejs',
-      'vertex-ai'
+    'confluence',
+    'jira',
+    'clickup',
+    'asana'
     ]
   },
   {
