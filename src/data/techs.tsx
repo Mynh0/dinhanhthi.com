@@ -56,7 +56,7 @@ import VertexAIIcon from '@/public/about/techs/vertex.png'
 import ViteIcon from '@/public/about/techs/vite.svg'
 import VscodeIcon from '@/public/about/techs/vscode.svg'
 import WordpressIcon from '@/public/about/techs/wordpress.svg'
-import PostgreSQLIcon from '@/public/about/techs/postgresql.svg'
+import PostgreSQL from '@/public/about/techs/postgresql.svg'
 import { StaticImageData } from 'next/image'
 
 export type TechItem = {
