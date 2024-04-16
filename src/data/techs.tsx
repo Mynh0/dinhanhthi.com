@@ -70,7 +70,7 @@ export type TechItem = {
 const techs: TechItem[] = [
   {id: 'postgre',
    name: 'PostgreSQL',
-   icon: 'PostgreSQL',
+   icon: PostgreSQL,
    url: 'https://www.postgresql.org/'
   },
   {
