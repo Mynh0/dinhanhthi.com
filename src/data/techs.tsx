@@ -56,7 +56,7 @@ import VertexAIIcon from '@/public/about/techs/vertex.png'
 import ViteIcon from '@/public/about/techs/vite.svg'
 import VscodeIcon from '@/public/about/techs/vscode.svg'
 import WordpressIcon from '@/public/about/techs/wordpress.svg'
-import PostgreIcon from '@/public/about/techs/postgre.png'
+import PostgreIcon from '@/public/about/techs/postgresql.svg'
 import { StaticImageData } from 'next/image'
 
 export type TechItem = {
@@ -68,7 +68,7 @@ export type TechItem = {
 }
 
 const techs: TechItem[] = [
-  {id: 'postgre',
+  {id: 'postgresql',
    name: 'PostgreSQL',
    icon: PostgreSQL,
    url: 'https://www.postgresql.org/'
