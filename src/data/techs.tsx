@@ -51,7 +51,7 @@ const techs: TechItem[] = [
 {
   id: 'excel',
   name: 'Excel',
-  icon: ExcelIcon
+  icon: ExcelIcon,
   url: 'https://www.microsoft.com/'
 }, 
 {
