@@ -19,7 +19,7 @@ const cv: CVGroupType[] = [
         date: '2023 — current',
         activity: [
           'I have been working and learning as a self learning business consultant. I have worked on data and business projects of all sizes, from small and simple to large and complex'
-        ]
+        ],
         tech: [
           'tableau',
           'powerbi',
