@@ -55,8 +55,7 @@ export default async function TagsPage() {
         headerType="gray"
         headerWidth="wide"
         title="List of topics"
-        subtitle={`A list of topics I write about. They are mainly about Web Development,
-          Data Science and Computer Science.`}
+        subtitle={`A list of topics I write about. They are mainly about Business, Data or just simply something I find intriguing`}
         icon={{ staticImageData: TopicIcon }}
         iconClassName="h-12 w-12"
       />
