@@ -15,10 +15,8 @@ import TagBrowserExtensionIcon from '../../icons/TagBrowserExtensionIcon'
 import TagDevIcon from '../../icons/TagDevIcon'
 import TagEducationIcon from '../../icons/TagEducationIcon'
 import TagIOSIcon from '../../icons/TagIOSIcon'
-import TagLinuxIcon from '../../icons/TagLinuxIcon'
 import TagMacOSIcon from '../../icons/TagMacOSIcon'
 import TagRelaxIcon from '../../icons/TagRelaxIcon'
-import TagVSCodeIcon from '../../icons/TagVSCodeIcon'
 import TagWebAppIcon from '../../icons/TagWebAppIcon'
 import TagWindowsIcon from '../../icons/TagWindowsIcon'
 import ToolItem from './ToolItem'
@@ -28,11 +26,9 @@ const iconTagList: { [x: string]: (props: React.SVGProps<SVGSVGElement>) => JSX.
   'browser-extension': TagBrowserExtensionIcon,
   dev: TagDevIcon,
   ios: TagIOSIcon,
-  linux: TagLinuxIcon,
   macos: TagMacOSIcon,
   relax: TagRelaxIcon,
   education: TagEducationIcon,
-  'vscode-extension': TagVSCodeIcon,
   'web-app': TagWebAppIcon,
   windows: TagWindowsIcon
 }
