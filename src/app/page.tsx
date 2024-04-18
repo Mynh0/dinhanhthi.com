@@ -101,8 +101,8 @@ export default async function Home() {
   }))
 
   const projectsToShow = projects.slice(0, numProjects)
-  const isThereDsProject = projectsToShow.some(project => project.type.includes('ds'))
-  const isThereWebProject = projectsToShow.some(project => project.type.includes('web'))
+  const isThereDataProject = projectsToShow.some(project => project.type.includes('dt'))
+  const isThereBusinessProject = projectsToShow.some(project => project.type.includes('bus'))
   const isThereOtherProject = projectsToShow.some(project => project.type.includes('other'))
 
   return (
@@ -275,22 +275,22 @@ export default async function Home() {
             />
             <div className="flex flex-col gap-x-3 gap-y-4">
               <div className="flex gap-4 flex-wrap">
-                {isThereDsProject && (
+                {isThereDataProject && (
                   <div className="flex gap-2 items-center">
                     <div className="h-1 rounded-xl w-8 sm:w-16 bg-sky-600"></div>
                     <div className="text-slate-600 text-sm">
-                      <span className="hidden sm:inline whitespace-nowrap">Data Science</span>
-                      <span className="sm:hidden">DS</span>
+                      <span className="hidden sm:inline whitespace-nowrap">Data</span>
+                      <span className="sm:hidden">Data</span>
                     </div>
                   </div>
                 )}
 
-                {isThereWebProject && (
+                {isThereBusinessProject && (
                   <div className="flex gap-2 items-center">
                     <div className="h-1 rounded-xl w-8 sm:w-16 bg-amber-500"></div>
                     <div className="text-slate-600 text-sm">
-                      <span className="hidden sm:inline whitespace-nowrap">Web Development</span>
-                      <span className="sm:hidden">Web</span>
+                      <span className="hidden sm:inline whitespace-nowrap">Business</span>
+                      <span className="sm:hidden">Business</span>
                     </div>
                   </div>
                 )}
