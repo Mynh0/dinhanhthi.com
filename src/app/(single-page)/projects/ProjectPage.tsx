@@ -13,7 +13,7 @@ export default function ProjectPage(props: { projects: Project[] }) {
   const inputRef = useRef<HTMLInputElement>(null)
   const [searchResult, setSearchResult] = useState<Project[]>(props.projects)
   const [query, setQuery] = useState('')
-  const [typesToShow, setTypesToShow] = useState<ProjectType[]>(['business', 'data', 'other'])
+  const [typesToShow, setTypesToShow] = useState<ProjectType[]>(['business', 'dt', 'other'])
   const buttonClassName = (type: ProjectType) =>
     cn(
       'px-4 py-1.5 thi-box-code rounded-3xl border-l-4 flex gap-2',
@@ -21,10 +21,10 @@ export default function ProjectPage(props: { projects: Project[] }) {
       {
         'text-white': typesToShow.includes(type),
         'bg-white': !typesToShow.includes(type),
-        'border-l-sky-600': type === 'data',
+        'border-l-sky-600': type === 'dt',
         'border-l-amber-500': type === 'business',
         'border-l-emerald-600': type === 'other',
-        'bg-sky-600': typesToShow.includes('data') && type === 'data',
+        'bg-sky-600': typesToShow.includes('dt') && type === 'dt',
         'bg-amber-500': typesToShow.includes('business') && type === 'business',
         'bg-emerald-600': typesToShow.includes('other') && type === 'other'
       }
@@ -47,7 +47,7 @@ export default function ProjectPage(props: { projects: Project[] }) {
     }
   }
 
-  const numDataProjects = projects.filter(project => project.type.includes('data')).length
+  const numDataProjects = projects.filter(project => project.type.includes('dt')).length
   const numBusinessProjects = projects.filter(project => project.type.includes('business')).length
   const numOtherProjects = projects.filter(project => project.type.includes('other')).length
 
@@ -84,10 +84,10 @@ export default function ProjectPage(props: { projects: Project[] }) {
       <div className="flex items-center gap-x-4 gap-y-2 flex-wrap justify-center sm:justify-start">
         <div className="text-slate-600 whitespace-nowrap">Show only?</div>
         <div className="flex gap-4">
-          <button onClick={() => toggleTypeToShow('data')} className={buttonClassName('data')}>
+          <button onClick={() => toggleTypeToShow('dt')} className={buttonClassName('dt')}>
             <span className="hidden md:inline whitespace-nowrap">Data</span>
             <span className="md:hidden">Data</span>
-            <span className={numClass('data')}>{numDataProjects}</span>
+            <span className={numClass('dt')}>{numDataProjects}</span>
           </button>
           <button onClick={() => toggleTypeToShow('business')} className={buttonClassName('business')}>
             <span className="hidden md:inline whitespace-nowrap">Business</span>
