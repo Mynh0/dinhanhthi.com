@@ -13,7 +13,7 @@ export default function ProjectPage(props: { projects: Project[] }) {
   const inputRef = useRef<HTMLInputElement>(null)
   const [searchResult, setSearchResult] = useState<Project[]>(props.projects)
   const [query, setQuery] = useState('')
-  const [typesToShow, setTypesToShow] = useState<ProjectType[]>(['business', 'dt', 'other'])
+  const [typesToShow, setTypesToShow] = useState<ProjectType[]>(['bus', 'dt', 'other'])
   const buttonClassName = (type: ProjectType) =>
     cn(
       'px-4 py-1.5 thi-box-code rounded-3xl border-l-4 flex gap-2',
@@ -22,10 +22,10 @@ export default function ProjectPage(props: { projects: Project[] }) {
         'text-white': typesToShow.includes(type),
         'bg-white': !typesToShow.includes(type),
         'border-l-sky-600': type === 'dt',
-        'border-l-amber-500': type === 'business',
+        'border-l-amber-500': type === 'bus',
         'border-l-emerald-600': type === 'other',
         'bg-sky-600': typesToShow.includes('dt') && type === 'dt',
-        'bg-amber-500': typesToShow.includes('business') && type === 'business',
+        'bg-amber-500': typesToShow.includes('bus') && type === 'bus',
         'bg-emerald-600': typesToShow.includes('other') && type === 'other'
       }
     )
@@ -48,7 +48,7 @@ export default function ProjectPage(props: { projects: Project[] }) {
   }
 
   const numDataProjects = projects.filter(project => project.type.includes('dt')).length
-  const numBusinessProjects = projects.filter(project => project.type.includes('business')).length
+  const numBusinessProjects = projects.filter(project => project.type.includes('bus')).length
   const numOtherProjects = projects.filter(project => project.type.includes('other')).length
 
   const projectsToShow = searchResult.filter(project =>
@@ -89,10 +89,10 @@ export default function ProjectPage(props: { projects: Project[] }) {
             <span className="md:hidden">Data</span>
             <span className={numClass('dt')}>{numDataProjects}</span>
           </button>
-          <button onClick={() => toggleTypeToShow('business')} className={buttonClassName('business')}>
+          <button onClick={() => toggleTypeToShow('bus')} className={buttonClassName('bus')}>
             <span className="hidden md:inline whitespace-nowrap">Business</span>
             <span className="md:hidden">Business</span>
-            <span className={numClass('business')}>{numBusinessProjects}</span>
+            <span className={numClass('bus')}>{numBusinessProjects}</span>
           </button>
           <button onClick={() => toggleTypeToShow('other')} className={buttonClassName('other')}>
             Others

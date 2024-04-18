@@ -55,10 +55,10 @@ function SkeletonProjectContainer() {
       'text-[0.95rem] flex items-center justify-center text-white',
       {
         'border-l-sky-600': type === 'dt',
-        'border-l-amber-500': type === 'business',
+        'border-l-amber-500': type === 'bus',
         'border-l-emerald-600': type === 'other',
         'bg-sky-600': type === 'dt',
-        'bg-amber-500': type === 'business',
+        'bg-amber-500': type === 'bus',
         'bg-emerald-600': type === 'other'
       }
     )
@@ -78,7 +78,7 @@ function SkeletonProjectContainer() {
             <span className="md:hidden">Data</span>
             <span className={numClass()}>?</span>
           </button>
-          <button className={buttonClassName('business')}>
+          <button className={buttonClassName('bus')}>
             <span className="hidden md:inline whitespace-nowrap">Business</span>
             <span className="md:hidden">Business</span>
             <span className={numClass()}>?</span>
