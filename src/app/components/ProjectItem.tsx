@@ -7,7 +7,7 @@ import AiOutlineLoading3Quarters from '@notion-x/src/icons/AiOutlineLoading3Quar
 import { Block } from 'notion-types'
 import techs from '../../data/techs'
 
-export type ProjectType = 'dt' | 'bus' | 'other'
+export type ProjectType = 'ds' | 'web' | 'other'
 
 export type Project = {
   id: string
@@ -56,8 +56,8 @@ export default function ProjectItem({ project, className, grayScale }: ProjectIt
       rel="noopener noreferrer"
     >
       <div className="absolute left-0 top-0 h-full w-full z-10 flex flex-col rounded-lg overflow-hidden">
-        {project.type.includes('dt') && <div className="flex-1 w-full bg-sky-600"></div>}
-        {project.type.includes('bus') && <div className="flex-1 w-full bg-amber-500"></div>}
+        {project.type.includes('ds') && <div className="flex-1 w-full bg-sky-600"></div>}
+        {project.type.includes('web') && <div className="flex-1 w-full bg-amber-500"></div>}
         {project.type.includes('other') && <div className="flex-1 w-full bg-emerald-600"></div>}
       </div>
       <div className="sticky h-full flex flex-col p-4 z-20 bg-white rounded-lg">
