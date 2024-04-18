@@ -13,7 +13,7 @@ export default function ProjectPage(props: { projects: Project[] }) {
   const inputRef = useRef<HTMLInputElement>(null)
   const [searchResult, setSearchResult] = useState<Project[]>(props.projects)
   const [query, setQuery] = useState('')
-  const [typesToShow, setTypesToShow] = useState<ProjectType[]>(['web', 'ds', 'other'])
+  const [typesToShow, setTypesToShow] = useState<ProjectType[]>(['business', 'data', 'other'])
   const buttonClassName = (type: ProjectType) =>
     cn(
       'px-4 py-1.5 thi-box-code rounded-3xl border-l-4 flex gap-2',
@@ -21,11 +21,11 @@ export default function ProjectPage(props: { projects: Project[] }) {
       {
         'text-white': typesToShow.includes(type),
         'bg-white': !typesToShow.includes(type),
-        'border-l-sky-600': type === 'ds',
-        'border-l-amber-500': type === 'web',
+        'border-l-sky-600': type === 'data',
+        'border-l-amber-500': type === 'business',
         'border-l-emerald-600': type === 'other',
-        'bg-sky-600': typesToShow.includes('ds') && type === 'ds',
-        'bg-amber-500': typesToShow.includes('web') && type === 'web',
+        'bg-sky-600': typesToShow.includes('data') && type === 'data',
+        'bg-amber-500': typesToShow.includes('business') && type === 'business',
         'bg-emerald-600': typesToShow.includes('other') && type === 'other'
       }
     )
@@ -47,8 +47,8 @@ export default function ProjectPage(props: { projects: Project[] }) {
     }
   }
 
-  const numDSProjects = projects.filter(project => project.type.includes('ds')).length
-  const numWebProjects = projects.filter(project => project.type.includes('web')).length
+  const numDataProjects = projects.filter(project => project.type.includes('data')).length
+  const numBusinessProjects = projects.filter(project => project.type.includes('business')).length
   const numOtherProjects = projects.filter(project => project.type.includes('other')).length
 
   const projectsToShow = searchResult.filter(project =>
@@ -84,15 +84,15 @@ export default function ProjectPage(props: { projects: Project[] }) {
       <div className="flex items-center gap-x-4 gap-y-2 flex-wrap justify-center sm:justify-start">
         <div className="text-slate-600 whitespace-nowrap">Show only?</div>
         <div className="flex gap-4">
-          <button onClick={() => toggleTypeToShow('ds')} className={buttonClassName('ds')}>
-            <span className="hidden md:inline whitespace-nowrap">Data Science</span>
-            <span className="md:hidden">DS</span>
-            <span className={numClass('ds')}>{numDSProjects}</span>
+          <button onClick={() => toggleTypeToShow('data')} className={buttonClassName('data')}>
+            <span className="hidden md:inline whitespace-nowrap">Data</span>
+            <span className="md:hidden">Data</span>
+            <span className={numClass('data')}>{numDataProjects}</span>
           </button>
-          <button onClick={() => toggleTypeToShow('web')} className={buttonClassName('web')}>
-            <span className="hidden md:inline whitespace-nowrap">Web Development</span>
-            <span className="md:hidden">Web</span>
-            <span className={numClass('web')}>{numWebProjects}</span>
+          <button onClick={() => toggleTypeToShow('business')} className={buttonClassName('business')}>
+            <span className="hidden md:inline whitespace-nowrap">Business</span>
+            <span className="md:hidden">Business</span>
+            <span className={numClass('business')}>{numBusinessProjects}</span>
           </button>
           <button onClick={() => toggleTypeToShow('other')} className={buttonClassName('other')}>
             Others
