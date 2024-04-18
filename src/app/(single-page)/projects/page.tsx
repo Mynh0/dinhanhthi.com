@@ -54,11 +54,11 @@ function SkeletonProjectContainer() {
       'px-4 py-1.5 thi-box-code rounded-3xl border-l-4 flex gap-2',
       'text-[0.95rem] flex items-center justify-center text-white',
       {
-        'border-l-sky-600': type === 'ds',
-        'border-l-amber-500': type === 'web',
+        'border-l-sky-600': type === 'dt',
+        'border-l-amber-500': type === 'business',
         'border-l-emerald-600': type === 'other',
-        'bg-sky-600': type === 'ds',
-        'bg-amber-500': type === 'web',
+        'bg-sky-600': type === 'dt',
+        'bg-amber-500': type === 'business',
         'bg-emerald-600': type === 'other'
       }
     )
@@ -73,14 +73,14 @@ function SkeletonProjectContainer() {
       <div className="flex items-center gap-x-4 gap-y-2 flex-wrap justify-center sm:justify-start">
         <div className="text-slate-600 whitespace-nowrap">Show only?</div>
         <div className="flex gap-4">
-          <button className={buttonClassName('ds')}>
-            <span className="hidden md:inline whitespace-nowrap">Data Science</span>
-            <span className="md:hidden">DS</span>
+          <button className={buttonClassName('dt')}>
+            <span className="hidden md:inline whitespace-nowrap">Data</span>
+            <span className="md:hidden">Data</span>
             <span className={numClass()}>?</span>
           </button>
-          <button className={buttonClassName('web')}>
-            <span className="hidden md:inline whitespace-nowrap">Web Development</span>
-            <span className="md:hidden">Web</span>
+          <button className={buttonClassName('business')}>
+            <span className="hidden md:inline whitespace-nowrap">Business</span>
+            <span className="md:hidden">Business</span>
             <span className={numClass()}>?</span>
           </button>
           <button className={buttonClassName('other')}>
