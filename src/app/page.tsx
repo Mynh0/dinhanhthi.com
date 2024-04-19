@@ -103,7 +103,7 @@ export default async function Home() {
   const projectsToShow = projects.slice(0, numProjects)
   const isThereDataProject = projectsToShow.some(project => project.type.includes('dt'))
   const isThereBusinessProject = projectsToShow.some(project => project.type.includes('bus'))
-  const isThereOtherProject = projectsToShow.some(project => project.type.includes('other'))
+  const isThereOthersProject = projectsToShow.some(project => project.type.includes('others'))
 
   return (
     <div className="thi-bg-stone">
@@ -295,7 +295,7 @@ export default async function Home() {
                   </div>
                 )}
 
-                {isThereOtherProject && (
+                {isThereOthersProject && (
                   <div className="flex gap-2 items-center">
                     <div className="h-1 rounded-xl w-8 sm:w-16 bg-emerald-600"></div>
                     <div className="text-slate-600 text-sm whitespace-nowrap">Others</div>

@@ -56,10 +56,10 @@ function SkeletonProjectContainer() {
       {
         'border-l-sky-600': type === 'dt',
         'border-l-amber-500': type === 'bus',
-        'border-l-emerald-600': type === 'other',
+        'border-l-emerald-600': type === 'othes',
         'bg-sky-600': type === 'dt',
         'bg-amber-500': type === 'bus',
-        'bg-emerald-600': type === 'other'
+        'bg-emerald-600': type === 'others'
       }
     )
 
@@ -83,7 +83,7 @@ function SkeletonProjectContainer() {
             <span className="md:hidden">Business</span>
             <span className={numClass()}>?</span>
           </button>
-          <button className={buttonClassName('other')}>
+          <button className={buttonClassName('others')}>
             Others
             <span className={numClass()}>?</span>
           </button>
