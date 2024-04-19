@@ -56,7 +56,7 @@ function SkeletonProjectContainer() {
       {
         'border-l-sky-600': type === 'dt',
         'border-l-amber-500': type === 'bus',
-        'border-l-emerald-600': type === 'othes',
+        'border-l-emerald-600': type === 'others',
         'bg-sky-600': type === 'dt',
         'bg-amber-500': type === 'bus',
         'bg-emerald-600': type === 'others'
