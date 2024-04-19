@@ -8,7 +8,7 @@ import SinglePostTemplate from '../../templates/SinglePostTemplate'
 export const revalidate = 20
 
 export const metadata = getMetadata({
-  title: 'Support Thi',
+  title: 'Support My',
   images: [
     {
       url: 'https://i.imgur.com/PyXUtfTh.png',
@@ -26,7 +26,7 @@ export default async function SupportThiPage() {
     const postProps = getPostProperties(block)
     return <SinglePostTemplate hideMeta={true} recordMap={recordMap} postProps={postProps} />
   } catch (error) {
-    console.log('🚨Error when loading Support Thi page', error)
+    console.log('🚨Error when loading Support My page', error)
     notFound()
   }
 }
