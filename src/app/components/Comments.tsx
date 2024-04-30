@@ -13,7 +13,7 @@ const Comments = ({ className }: { className?: string }) => {
     url: 'https://utteranc.es/client.js',
     theme: 'github-light',
     issueTerm: 'title',
-    repo: 'my-ha-nguyen/myweb.com-comments',
+    repo: ''my-ha-nguyen/myweb.com',
     ref: comment
   })
 
